@@ -205,7 +205,54 @@ background:var(--bs-danger);
 .menu{
   display:none;
 }
+<<<<<<< HEAD
 
+=======
+@media screen and (max-width:450px){
+  .name h1{
+    font-size:4rem;
+  }
+  .nav-item.home .nav-link{
+    display:block;
+  }
+  .nav-item .nav-link{
+    display:none;
+  }
+  .side-bar ul li{
+
+    list-style:none;
+  }
+  .side-bar.active .close{
+    position: absolute;
+    top:10%;
+    right:10%;
+    color:white;
+  }
+
+  .side-bar.active{
+    position:fixed;
+    top:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(rgb(133, 0, 0,1),rgba(0,0,0,.7), rgba(0,0,0,.9));
+    z-index:10 !important;
+    width:100vw !important;
+    height:100vh !important;
+  }
+  .nav-item.home{
+    display:block !important;
+  }
+}
+.side-bar{
+  height:0;
+  width:0;
+  overflow:hidden;
+}
+.home{
+  display:none;
+}
+>>>>>>> ba82e6fca3521222fdadd783f3ce4534b184dcf0
 @media screen and (max-width:400px){
   .name h1{
     font-size:4rem;

@@ -30,6 +30,7 @@ var swiper = new Swiper(".mySwiper", {
     hideMore.classList.toggle('d-none')
   })
 
+<<<<<<< HEAD
 const menu=document.querySelector('.menu')
 const sideBarCloseBtn=document.querySelectorAll('.side-bar-close')
 const sideBar=document.querySelector('.side-bar')
@@ -44,3 +45,5 @@ menu.addEventListener('click', ()=>{
 
     })
   })
+=======
+>>>>>>> ba82e6fca3521222fdadd783f3ce4534b184dcf0
