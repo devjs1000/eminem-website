@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Indie+Flower&display=swap');
+
+
+
+
+.swiper {
+  width: 100vw;
+  height: auto;
+  padding: 50px;
+  min-height:20rem;
+}
+
+.swiper-slide {
+  background-position: center center;
+  background-size: cover;
+  width: auto;
+  height: auto;
+  min-height:20rem;
+
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.1);
+  min-height:20rem;
+object-fit: cover;
+}
+.name {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+
+  background-image: url("https://64.media.tumblr.com/2d76a1d4c54b741ad019ff3ebbde9d5d/tumblr_oylc3uURUq1qeyvpto1_500.gifv");
+  background-attachment: fixed;
+  color: transparent;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.name h1 {
+  font-size: 5rem;
+}
+
+.fa, .fab{
+  font-size: 2rem;
+  transition:.3s;
+}
+.fa:hover, .fab:hover{
+  transform: translateY(-5px);
+}
+.w-full{
+  width:100%;
+}
+.font-1{
+  font-family: 'Cinzel', serif;
+}
+.album-card{
+  height:300px;
+}
+.album-card{
+  position: relative;
+  margin:1rem 2rem 1rem 2rem;
+
+}
+.album-card .card-text{
+  height:280px;
+  overflow: auto;
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  background:rgba(0, 0, 0, 0.5);
+ opacity: 0;
+ padding:1rem !important;
+ transition:.4s;
+}
+.album-card .card-text:hover{
+  opacity: 1;
+}
+.album-card a{
+  position: absolute;
+  top:250px;
+  left: 0;
+ width:100%;
+  background:rgba(0, 0, 0, 1);
+}
+textarea{
+  resize: none !important;
+}
+.nav-link:hover{
+background:green;
+}
+#contact-form{
+  border-top:1px solid rgba(255,255,255,.1)
+}
+@media screen and (max-width:600px){
+  .album-card{
+    height:200px;
+  }
+  .album-card{
+    position: relative;
+    margin:1rem 2rem 1rem 2rem;
+  
+  }
+  .album-card .card-text{
+    height:180px;
+    overflow: auto;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    background:rgba(0, 0, 0, 0.5);
+   opacity: 0;
+   padding:1rem !important;
+   transition:.4s;
+  }
+  .album-card .card-text:hover{
+    opacity: 1;
+  }
+  .album-card a{
+    position: absolute;
+    top:150px;
+    left: 0;
+   width:100%;
+    background:rgba(0, 0, 0, 1);
+  }
+  .album-card .card-image-top{
+    
+  }
+}
