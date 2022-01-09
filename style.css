@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Indie+Flower&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 
 .swiper {
@@ -43,7 +42,9 @@ object-fit: cover;
   background-clip: text;
 }
 .name h1 {
-  font-size: 5rem;
+  font-size: 10rem;
+  font-weight:900;
+  font-family:sans-serif;
 }
 
 .fa, .fab{
@@ -58,6 +59,9 @@ object-fit: cover;
 }
 .font-1{
   font-family: 'Cinzel', serif;
+}
+.font-2{
+  font-family: 'Righteous', cursive;
 }
 .album-card{
   height:300px;
@@ -89,6 +93,8 @@ object-fit: cover;
   left: 0;
  width:100%;
   background:rgba(0, 0, 0, 1);
+  font-family: 'Righteous', cursive;
+
 }
 textarea{
   resize: none !important;
@@ -99,39 +105,55 @@ background:green;
 #contact-form{
   border-top:1px solid rgba(255,255,255,.1)
 }
+#about{
+  overflow:auto;
+}
+#about article img{
+ object-fit: cover;
+ width:400px;
+ height:400px;
+}
+#about article .about-eminem{
+  height:300px;
+  overflow:hidden;
+  transition:.4s;
+}
+#about article .about-eminem.about-active{
+  height:auto !important;
+  overflow:hidden !important;
+}
+
 @media screen and (max-width:600px){
-  .album-card{
-    height:200px;
+  .name h1 {
+    font-size: 5rem;
+    font-weight:900;
+    font-family:sans-serif;
+  }
+  #albums{
+    padding:0 !important;
+
   }
   .album-card{
     position: relative;
-    margin:1rem 2rem 1rem 2rem;
-  
+    margin:1rem 0 1rem 0;
   }
-  .album-card .card-text{
-    height:180px;
-    overflow: auto;
-    position: absolute;
-    top:0;
-    left: 0;
-    right: 0;
-    bottom:0;
-    background:rgba(0, 0, 0, 0.5);
-   opacity: 0;
-   padding:1rem !important;
-   transition:.4s;
+  #about article{
+    display:block !important;
+
   }
-  .album-card .card-text:hover{
-    opacity: 1;
+  #about article .about-eminem{
+    height:300px;
+    overflow:hidden;
+    transition:.4s;
   }
-  .album-card a{
-    position: absolute;
-    top:150px;
-    left: 0;
-   width:100%;
-    background:rgba(0, 0, 0, 1);
-  }
-  .album-card .card-image-top{
-    
+  #about article img{
+    width:200px !important;
+    height:200px !important;
+   }
+   
+}
+@media screen and (max-width:400px){
+  .name h1{
+    font-size:4rem;
   }
 }
