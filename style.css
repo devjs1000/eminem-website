@@ -152,6 +152,9 @@ background:green;
    }
    
 }
+img{
+  max-width:100% !important;
+}
 @media screen and (max-width:400px){
   .name h1{
     font-size:4rem;
