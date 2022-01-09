@@ -46,7 +46,7 @@
         <li class="nav-item">
           <a class="nav-link text-white" href="#contact-form">CONTACT</a>
         </li>
-        <li class="nav-item active home">
+        <li class="nav-item active menu">
           <a
             class="nav-link active"
             aria-current="page
@@ -59,6 +59,7 @@
         </li>
       </ul>
     </nav>
+
 <!-- side bar started -->
 <div class="font-2 side-bar ">
   <i class="fa fa-times side-bar-close close"></i>
@@ -116,10 +117,13 @@
     </div>
 
     <!-- music albumns area started -->
+    <h2 class='bg-dark text-black text-center p-4' style='font-size:3rem;margin:0;'> <span class='font-2 text-danger'>the EMINEM albums</span>  </h2>
+
     <div
       id="albums"
       class="albums bg-dark text-white  d-flex flex-wrap justify-content-around align-items-center"
     >
+
       <div
         class="album-card d-flex align-items-stretch flex-wrap"
         style="width: 18rem"
@@ -268,12 +272,11 @@
 
     <!-- about area started -->
     <div id="about" class='my-4'>
-      <article class='d-flex'>
-        <img class='rounded-circle shadow ' src="https://miro.medium.com/max/1024/1*0FKGTp-zaeSCvqwycFBIBA.png" alt="eminem photo" />
-        
-        <div>
+      <article class='about-eminem '>
+        <img class='rounded-circle shadow curve ' style=' margin-right:2rem !important;' src="https://miro.medium.com/max/1024/1*0FKGTp-zaeSCvqwycFBIBA.png" alt="eminem photo" />
+        <div class='mx-4'>
           <h2 style='font-size:3rem;'>About <span class='font-2'> EMINEM</span>  </h2>
-          <p class='about-eminem '>
+          <p class=d-inline mx-4'>
             Eminem was born Marshall Bruce Mathers III in St. Joseph, Missouri, to
             Deborah R. (Nelson) and Marshall Bruce Mathers, Jr., who were in a
             band together, Daddy Warbucks. He is of English, as well as some
@@ -327,12 +330,12 @@
             and almost going to prison, Marshall has explained his life in one
             word: "Claimer".
           </p>
-          <a class='show-more btn btn-dark font-2' href='#about-end' >show more</a>
-          <a class='hide-more d-none btn font-2 btn-dark' href='#about' >show less</a>
-<div id='about-end' class='d-none'></div>
         </div>
-       
       </article>
+                <a class='show-more btn mx-4 btn-dark font-2' href='#about-end' >show more</a>
+          <a class='hide-more mx-4 d-none btn font-2 btn-dark' href='#about' >show less</a>
+<div id='about-end' class='d-none'></div>
+
     </div>
 
     <!-- form area started -->
@@ -340,15 +343,15 @@
       action="https://formsubmit.co/anandecho1000@gmail.com"
       id="contact-form"
       method="POST"
-      class="bg-black d-flex m-1 p-1 rounded justify-content-center align-items-center"
-      style="min-height: 60vh"
+      class="bg-black font-2  d-flex m-2 p-1 justify-content-center align-items-center"
+      style="min-height: 60vh; border-radius: 1rem;"
     >
       <div class="" style="max-width: 100vw">
         <div class="bg-white my-1 d-flex">
           <label
             for="email"
             class="bg-danger p-2 text-white text-truncate"
-            style="width: 150px"
+            style="width: 100px"
             >EMAIL</label
           >
           <input
@@ -363,7 +366,7 @@
           <label
             for="name"
             class="bg-black p-2 text-white text-truncate"
-            style="width: 150px"
+            style="width: 100px"
             >NAME</label
           >
           <input type="text" name="_honey" style="display: none" />
@@ -391,7 +394,7 @@
          
           >what you wanna say?</label
         >
-          <textarea id='comment' name="comment " class="w-full"></textarea>
+          <textarea id='comment' rows='6' name="comment " class="w-full"></textarea>
         </div>
           <button type="submit" class="p-1 btn w-full py-2 font-2 my-1 btn-light" style='margin:auto;'>submit</button>
 

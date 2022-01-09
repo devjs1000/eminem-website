@@ -98,6 +98,8 @@ object-fit: cover;
 }
 textarea{
   resize: none !important;
+  font-family: sans-serif, sans;
+
 }
 .nav-link:hover{
 background:var(--bs-danger);
@@ -105,20 +107,18 @@ background:var(--bs-danger);
 #contact-form{
   border-top:1px solid rgba(255,255,255,.1)
 }
-#about{
-  overflow:auto;
-}
 #about article img{
  object-fit: cover;
  width:400px;
  height:400px;
 }
-#about article .about-eminem{
-  height:300px;
+#about article.about-eminem{
+  display:block;
+  height:400px;
   overflow:hidden;
   transition:.4s;
 }
-#about article .about-eminem.about-active{
+#about article.about-eminem.about-active{
   height:auto !important;
   overflow:hidden !important;
 }
@@ -141,7 +141,7 @@ background:var(--bs-danger);
     display:block !important;
 
   }
-  #about article .about-eminem{
+  #about article.about-eminem{
     height:300px;
     overflow:hidden;
     transition:.4s;
@@ -152,14 +152,16 @@ background:var(--bs-danger);
    }
    
 }
-img{
-  max-width:100% !important;
+.curve{
+  float: left;
+  -webkit-shape-outside:circle();
+  shape-outside:circle();
 }
 @media screen and (max-width:450px){
   .name h1{
     font-size:4rem;
   }
-  .nav-item.home .nav-link{
+  .nav-item.menu .nav-link{
     display:block;
   }
   .nav-item .nav-link{
@@ -186,21 +188,30 @@ img{
     z-index:10 !important;
     width:100vw !important;
     height:100vh !important;
+    opacity:1;
   }
-  .nav-item.home{
+  .nav-item.menu{
     display:block !important;
   }
 }
 .side-bar{
   height:0;
   width:0;
+  opacity:0;
+  color:white;
   overflow:hidden;
+  transition:.3s;
 }
-.home{
+.menu{
   display:none;
 }
+
 @media screen and (max-width:400px){
   .name h1{
     font-size:4rem;
   }
+}
+
+::placeholder{
+  font-family: sans-serif, sans;
 }

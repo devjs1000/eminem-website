@@ -30,3 +30,17 @@ var swiper = new Swiper(".mySwiper", {
     hideMore.classList.toggle('d-none')
   })
 
+const menu=document.querySelector('.menu')
+const sideBarCloseBtn=document.querySelectorAll('.side-bar-close')
+const sideBar=document.querySelector('.side-bar')
+
+menu.addEventListener('click', ()=>{
+  sideBar.classList.toggle('active')
+})
+
+  sideBarCloseBtn.forEach(a=>{
+    a.addEventListener('click',(e)=>{
+      sideBar.classList.toggle('active')
+
+    })
+  })
