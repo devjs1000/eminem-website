@@ -199,3 +199,8 @@ img{
 .home{
   display:none;
 }
+@media screen and (max-width:400px){
+  .name h1{
+    font-size:4rem;
+  }
+}
