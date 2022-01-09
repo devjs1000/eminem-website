@@ -205,9 +205,7 @@ background:var(--bs-danger);
 .menu{
   display:none;
 }
-<<<<<<< HEAD
 
-=======
 @media screen and (max-width:450px){
   .name h1{
     font-size:4rem;
@@ -252,7 +250,6 @@ background:var(--bs-danger);
 .home{
   display:none;
 }
->>>>>>> ba82e6fca3521222fdadd783f3ce4534b184dcf0
 @media screen and (max-width:400px){
   .name h1{
     font-size:4rem;
