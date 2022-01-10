@@ -1,16 +1,16 @@
 {
   "name": "The Eminem",
-  "short_name": "",EMINEM
+  "short_name": "EMINEM",
   "start_url": "index.html",
   "icons": [
     {
-      "src": "https://i.ibb.co/cCX5nMv/logo192.png",
+      "src": "https://i.ibb.co/nQLQSsp/eminem-logo-1.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "maskable any"
       },
     {
-      "src": "https://i.ibb.co/ZxWrrdp/logo512.png",
+      "src": "https://i.ibb.co/N7GgHgH/eminem-logo-2.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "maskable any"
