@@ -1,4 +1,4 @@
-
+//making app available offline
   
 var cacheName='eminem_web_1'
 
