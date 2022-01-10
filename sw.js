@@ -1,6 +1,6 @@
 
   
-var cacheName='vtApk69'
+var cacheName='eminem_web_1'
 
 //calling install event
 self.addEventListener('install',e=>{
