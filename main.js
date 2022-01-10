@@ -42,3 +42,10 @@ sideBarCloseBtn.forEach((a) => {
     sideBar.classList.toggle("active");
   });
 });
+
+// starting the service worker
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').then(reg => 0).catch(er => 0)
+  })
+}
